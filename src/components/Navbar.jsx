@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
+import { FaMoon, FaSun, FaBars, FaTimes, FaCode } from 'react-icons/fa';
 
 const Navbar = () => {
     const [theme, setTheme] = useState('light');
@@ -26,7 +26,10 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <nav>
-                    <div className="logo">Anexe Thomas</div>
+                    <div className="logo">
+                        <FaCode style={{ marginRight: '0.5rem', color: 'var(--accent)' }} />
+                        Anexe Thomas
+                    </div>
                     <div className="nav-right">
                         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                             <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaServer, FaCode, FaTools } from 'react-icons/fa';
+import { FaServer, FaCode, FaTools, FaPython, FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaBootstrap } from 'react-icons/fa';
+import { SiDjango, SiMysql, SiSqlite, SiTailwindcss, SiPostman } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
@@ -41,31 +42,32 @@ const Skills = () => {
                     <motion.div className="skill-category" variants={itemVariants} whileHover={{ y: -5 }}>
                         <h3><FaServer /> Backend</h3>
                         <div className="skill-tags">
-                            <span className="skill-tag">Python</span>
-                            <span className="skill-tag">Django</span>
-                            <span className="skill-tag">Django ORM</span>
-                            <span className="skill-tag">DRF</span>
-                            <span className="skill-tag">SQLite</span>
+                            <span className="skill-tag"><FaPython /> Python</span>
+                            <span className="skill-tag"><SiDjango /> Django</span>
+                            <span className="skill-tag"><SiDjango /> Django ORM</span>
+                            <span className="skill-tag"><SiDjango /> DRF</span>
+                            <span className="skill-tag"><SiMysql /> MySQL</span>
+                            <span className="skill-tag"><SiSqlite /> SQLite</span>
                         </div>
                     </motion.div>
                     <motion.div className="skill-category" variants={itemVariants} whileHover={{ y: -5 }}>
                         <h3><FaCode /> Frontend</h3>
                         <div className="skill-tags">
-                            <span className="skill-tag">HTML</span>
-                            <span className="skill-tag">CSS</span>
-                            <span className="skill-tag">JavaScript</span>
-                            <span className="skill-tag">React</span>
-                            <span className="skill-tag">Tailwind CSS</span>
-                            <span className="skill-tag">Bootstrap</span>
+                            <span className="skill-tag"><FaHtml5 /> HTML</span>
+                            <span className="skill-tag"><FaCss3Alt /> CSS</span>
+                            <span className="skill-tag"><FaJs /> JavaScript</span>
+                            <span className="skill-tag"><FaReact /> React</span>
+                            <span className="skill-tag"><SiTailwindcss /> Tailwind CSS</span>
+                            <span className="skill-tag"><FaBootstrap /> Bootstrap</span>
                         </div>
                     </motion.div>
                     <motion.div className="skill-category" variants={itemVariants} whileHover={{ y: -5 }}>
                         <h3><FaTools /> Tools</h3>
                         <div className="skill-tags">
-                            <span className="skill-tag">Git</span>
-                            <span className="skill-tag">GitHub</span>
-                            <span className="skill-tag">VS Code</span>
-                            <span className="skill-tag">Postman</span>
+                            <span className="skill-tag"><FaGitAlt /> Git</span>
+                            <span className="skill-tag"><FaGithub /> GitHub</span>
+                            <span className="skill-tag"><FaCode /> VS Code</span>
+                            <span className="skill-tag"><SiPostman /> Postman</span>
                         </div>
                     </motion.div>
                 </motion.div>
