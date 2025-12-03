@@ -61,7 +61,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                Download Resume <FaDownload />
+                                <a href="https://drive.google.com/uc?export=download&id=1sH2_0bwJYxm9W39T9aq0XtJfPktBr-Ab" target="_blank" rel="noopener noreferrer" className="your-button-classes">Download Resume</a>
                             </motion.a>
                         </div>
                     </motion.div>
